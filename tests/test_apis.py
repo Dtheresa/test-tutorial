@@ -61,12 +61,6 @@ def test_create_post():
         })
     assert response.status_code == 201
 
-    # response = requests.get('https://jsonplaceholder.typicode.com/posts')
-    # posts = response.json()
-    # new_posts = [post for post in posts if post['title'] == "new post"]
-    # print(new_posts)
-    # assert False
-
 
 def test_update_post():
     response = requests.put('https://jsonplaceholder.typicode.com/posts/1',
